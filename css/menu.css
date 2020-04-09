@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul,li {
+    list-style: none;
+}
+button{
+	border:0px;
+	background-color:transparent;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-family:微软雅黑;
+}
+.notepad-menubar{
+    position: fixed;
+    /* width:100%;
+    height:100%; */
+}
+/* 菜单列表 */
+.menu-title .title{
+    float: left;
+    height:23px;
+    width:60px;
+    margin:10px;
+    text-align: center;
+    cursor: default;
+}
+.menu-title .title:hover{
+    background-color:rgb(163, 223, 246);
+}
+/* 菜单下拉列表 */
+.menus{
+    /* width: 250px; */
+    background-color: #f2f2f2;
+    float:left;
+    box-shadow: 5px 5px 5px #a6a6a6;
+    padding:3px;
+    margin-left:5px;
+    position: absolute;
+    top:31px;
+}
+.menu-item{
+    height:22px;
+    padding-left: 22px;
+    cursor: default;
+    position: relative;
+}
+.menu-item:hover{
+    background-color:rgb(163, 223, 246);
+}
+.menu-hr{
+    border: 1px solid #d7d7d7;
+    /* display: block; */
+    height: 0px;
+    margin: 4px;
+    margin-left: 22px;
+}
+.shortcut{
+    position: absolute;
+    right:15px;
+}
+.disabled:hover {
+    background-color: #e6e6e6;
+  }
+/* 输入文本 */
+.notepad-editor{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    right: 0;
+    top: 50px;
+    z-index: -1;
+    /* z-index:-1; 页面往里压一层*/
+}
+.notepad-editor textarea{
+    border-top: 1px solid #d2d2d2;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    overflow: scroll;
+    resize: none;
+    font-size:26px;
+    padding-left:10px;
+    z-index: -1;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <div class="list1"></div>
+    <div class="list2"></div>
+    <div class="list3"></div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="list.js"></script>
+<script>
+    $(function() {
+    var list1 = new $list();
+    var list2 = new $list();
+    var list3 = new $list();
+    list1.show({
+        contaniner:'.list1',
+        list:['Agency FB', 'Algerian', 'Arial', 'Arial Rounded MT', 'Axure Handwriting', 'Bahnschrift', 'Baskerville Old Face', 'Bauhaus 93', 'Bell MT', 'Berlin Sans FB', 'Bernard MT', 'BlackAdder ITC'],
+        select:0,
+        width:'200px',
+        isFont: true,
+        isFontStyle: false,
+        selectHandler: function(e) { console.log(e); }
+    });
+    list2.show({
+        contaniner:'.list2',
+        list:['常规', '斜体', '粗体', '粗偏斜体'],
+        select:0,
+        width:'150px',
+        isFont: false,
+        isFontStyle:true,
+        selectHandler: function(e) { console.log(e); }
+    });
+    list3.show({
+        contaniner:'.list3',
+        list:['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '26', '28', '36', '48', '72'],
+        select:0,
+        width:'100px',
+        isFont: false,
+        isFontStyle:false,
+        selectHandler: function(e) { console.log(e); }
+    });
+    });
+</script>
+</html>

@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.notepad-dlg-font{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.notepad-dlgbox {
+    height: 498px;
+    width: 438px;
+    border: 1px solid #0f7fd6;
+    box-shadow: 10px 10px 10px #d6d6d6;
+    margin: 0 auto;
+    position: relative;
+    top:30px;
+}
+.notepad-dlg-titlebar{
+    height: 30px;
+    font-size: 1.3em;
+    background-color: white;
+}
+.notepad-dlg-titlebar .title{
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+}
+.close-btn{
+    float: right;
+    color:gray;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+.notepad-dlg-main{
+    height: 444px;
+    padding: 12px;
+    background-color: #f0f0f0;
+}
+.font-family{
+    width: 176px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.font-style{
+    width: 132px;
+    display: inline-block;
+    margin-right: 16px;
+}
+.font-size{
+    width: 64px;
+    display: inline-block;
+}
+.sample{
+    width: 200px;
+    height: 105px;
+    border-color: #fff;
+    margin-top: 28px;
+    padding: 8px;
+}
+.script{
+    margin-top: 12px;
+}
+.script select{
+    width: 214px;
+    height: 22px;
+}
+.btn{
+    height: 28px;
+    width: 86px;
+}
+.btn-ok{
+    position: absolute;
+    bottom: 10px;
+    right: 110px;
+}
+.btn-cancel{
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+}
+.main{
+    width: 100%;
+}
+.editor {
+    border: 1px solid #0078d7;
+    font-size: 1em;
+    height: 20px;
+    width: 100%;
+}
+.list{
+    background-color: #fff;
+    overflow-y:scroll;
+    border:1px solid #828790;
+    display: inline-block;
+    height: 116px;
+    width: 100%;
+}
+.item{
+    line-height: 16px;
+    padding-left: 2px;
+    list-style: none;
+}
+.selected {
+    background-color: #0078d7;
+    color: white;
+}
